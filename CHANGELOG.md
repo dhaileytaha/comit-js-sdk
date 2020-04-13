@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+- **Breaking API Change**: Restricted type of `BitcoinWallet`'s `network` parameter to improve type safety.
+- **Breaking API Change**: Replaced `InMemoryBitcoinWallet` with `BitcoindWallet`.
+All APIs have remained stable except for the constructor, which now accepts a private key instead of a HD key.
+
 ## [0.15.2] - 2020-03-30
 
 ### Added
